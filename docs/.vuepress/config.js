@@ -74,11 +74,18 @@ module.exports = {
         children: ["one", "two", "three"],
       }],
       "/css/": [{
-        title: "css",
+        title: "css综合",
         path: '/css/',
         collapsable: false,
         children: ["one"],
-      }],
+      },
+      {
+        title: "css常用动画",
+        path: '/css/',
+        collapsable: false,
+        children: ["animate", "loading", 'animateCss'],
+      }
+    ],
       "/js/": [{
         title: "js",
         path: '/js/',
@@ -200,7 +207,7 @@ module.exports = {
      },
     sass: { indentedSyntax: true },
     scss: {
-        includePaths: ["./public/scss/index.scss", "./public/scss/_variable.scss"]
+        includePaths: ["./public/scss/index.scss", "./public/scss/_variable.scss", './public/scss/demo.scss',  './public/scss/loading.scss']
     },
     socialLinks: [{ icon: "github", link: "https://gitee.com/geeksdidi" }],
   },
