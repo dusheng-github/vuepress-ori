@@ -6,7 +6,7 @@ module.exports = {
   title: "前端笔记",
   base: "/vuepress/",
   description: "常用功能记录",
-  head: [["link", { rel: "icon", href: `/logo.png` }]],
+  head: [["link", { rel: "icon", href: `/head.png` }]],
   port: 8080,
   themeConfig: {
     siteTitle: false,
@@ -55,6 +55,7 @@ module.exports = {
         { text: "设计模式", link: "/designMode/" },
         { text: "解决方案", link: "/method/" },
         { text: "前端工程化", link: "/cli/" },
+        { text: "前端安全", link: "/safe/" },
       ],
     },
     {  text: "链接",
@@ -90,7 +91,7 @@ module.exports = {
         title: "js",
         path: '/js/',
         collapsable: false,
-        children: [""],
+        children: ["", 'reg'],
       }],
       "/uniapp/": [{
         title: "uniapp指南",

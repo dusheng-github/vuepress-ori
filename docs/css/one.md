@@ -330,15 +330,26 @@ user-select: none;
 
 
 <DemoContainer title="演示：使页面处于灰色模式">
-<template>
-        页面变灰<input type="checkbox"  onclick="toggle()">
-</template>
-    <script >
-     function toggle() {
+<script>
+  export default {
+    data() {
+      return {
+        isGray: false
+      }
+    },
+    watch: {
+      isGray() {
         const body = document.querySelector('body')
         body.classList.toggle('is-gray') 
-     }
-    </script>
+      }
+    }
+  }
+</script>
+<el-switch
+  v-model="isGray"
+  active-text="页面变灰"
+  inactive-text="页面正常">
+</el-switch>
 </DemoContainer>
 
 ```css
