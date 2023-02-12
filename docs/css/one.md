@@ -284,7 +284,7 @@ border-left: 50px solid transparent;
       transform: scale(1.2);
     }
 }
-  input {
+  .input {
     color: blue;
     caret-color: red;
     &::placeholder {
@@ -581,7 +581,7 @@ img {
 
 <DemoContainer title="演示：修改`placeholder`样式">
  <div>
-    <input placeholder="hello world"></input>
+    <input placeholder="hello world" class="input"></input>
  </div>
 </DemoContainer>
 
